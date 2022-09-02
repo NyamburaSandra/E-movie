@@ -81,3 +81,65 @@ main{
     padding: 0.25rem 0.5rem;
     border-radius: 3px;
   }
+  .overview{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: black;
+    background-color: white;
+    padding: 1rem;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+    
+  }
+  
+  .movie:hover .overview{
+    transform: translateY(0);
+  }
+  
+
+  /* modal starts here */
+  .modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 10px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #0A81AB;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 10px solid #F9DFDC;
+    width: 50%; 
+    border-radius: 10px;
+  }
+  .modal-content img{
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

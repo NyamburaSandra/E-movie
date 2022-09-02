@@ -32,4 +32,5 @@ input[type=text]{
     margin-top: 13px;
     border: none;
     border-radius: 15px;
+    outline: 0;
 }

@@ -93,6 +93,15 @@ const apiKey = 'api_key=1cf50e6248dc270629e802686245c2c8';
   const search = document.getElementById('search');
   const tags = document.getElementById('tags');
 
+  //display movie in the place holder
+  form.addEventListener("submit",(e)=>{
+    e.preventDefault();
+    const searchMovie=search.value;
+
+    if(searchMovie){
+      getMovies()
+    }
+  })
   //get data from API for movies on landing page
   function getMovies(url) {
     fetch(url)

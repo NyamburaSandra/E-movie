@@ -13,6 +13,7 @@ body{
     background-color: cornflowerblue;
     overflow: hidden;
 }
+/* nav bar */
 .container a{
     float: left;
     padding: 20px 16px;
@@ -24,9 +25,10 @@ body{
     font-size: 15px;
     text-decoration: none;
 }
+/* search bar */
 .search-container{
     float: right;
-    color: black;
+    
 }
 input[type=text]{
     padding: 6px;
@@ -34,11 +36,6 @@ input[type=text]{
     border: none;
     border-radius: 15px;
     outline: 0;
-    color: #000;
-}
-.search:focus{
-    /* background-color: gray; */
-    color: white;
 }
 main{
     display: flex;

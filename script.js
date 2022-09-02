@@ -88,3 +88,7 @@ const apiKey = 'api_key=1cf50e6248dc270629e802686245c2c8';
       "name": "Western"
     }
   ]
+  const main = document.getElementById('main');
+  const form =  document.getElementById('form');
+  const search = document.getElementById('search');
+  const tags = document.getElementById('tags');

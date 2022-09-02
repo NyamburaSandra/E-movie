@@ -9,47 +9,43 @@ body{
     padding: 0;
     background-color: whitesmoke;
 }
-.container{
+  header{
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
     background-color: cornflowerblue;
-    overflow: hidden;
-}
-.search-container{
-    float: right; 
-}
-.container a{
-    float: left;
-    padding: 20px 16px;
-    text-align: le;
-    display: block;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 15px;
-    text-decoration: none;
-}
-.search{
-    background-color: lightgray;
-    border: 2px solid white;
-    padding:0.5rem 1rem;
+    border-bottom: 2px solid #F9DFDC;
+  }
+  
+  button{
+    border: 1px solid #F9DFDC;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    background-color: #0A81AB;
+    color: #F9DFDC;
+    margin-right: 2rem;
+  }
+  button:hover{
+    border: 2px solid #F9DFDC;
+  }
+  .search{
+    background-color: transparent;
+    border: 2px solid #F9DFDC;
+    padding: 0.5rem 1rem;
     border-radius: 50px;
     font-size: 1rem;
-    color:#fff;
+    color: #F9DFDC;
     font-family: inherit;
-}
-.search:focus{
+  }
+  .search:focus{
+    outline: 0;
     background-color: white;
-}
-.search::placeholder{
-    color: black;
-}
-input[type=text]{
-    padding: 6px;
-    margin-top: 13px;
-    border: none;
-    border-radius: 15px;
-    outline:0;
-}
-main{
+  }
+  .search:placeholder{
+    color: gray;
+  }
+  main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -63,19 +59,17 @@ main{
     position: relative;
     overflow: hidden;
   }
-
+  
+  .addBorder{
+    border: 5px solid green;
+  }
   .movie img{
     width: 100%;
-    /* filter: gray;
-    -webkit-filter: grayscale(1); */
   }
-  
   .movie img:hover{
      filter: gray;
     -webkit-filter: grayscale(1);
-  
   }
-  
   .movie-info{
      color: #0A81AB;
     display: flex;
@@ -84,13 +78,10 @@ main{
     padding: 0.5rem 1rem 1rem;
     letter-spacing: 0.5px;
     background-color: #000;
-  
   }
-  
   .movie-info h3{
     margin-top: 0;
   }
-  
   .movie-info span{
     background-color: #0A81AB;
     padding: 0.25rem 0.5rem;
@@ -102,7 +93,7 @@ main{
     right: 0;
     bottom: 0;
     color: black;
-    background-color: white;
+    background-color:white;
     padding: 1rem;
     max-height: 100%;
     transform: translateY(101%);
@@ -114,7 +105,9 @@ main{
     transform: translateY(0);
   }
   
-
+  .selected{
+    border: 10px solid green;
+  }
   /* modal starts here */
   .modal {
     display: none; 
@@ -153,6 +146,7 @@ main{
     font-weight: bold;
   }
   
+  .close:hover,
   .close:focus {
     color: black;
     text-decoration: none;

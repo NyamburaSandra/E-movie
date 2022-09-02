@@ -91,6 +91,7 @@ const apiKey = 'api_key=1cf50e6248dc270629e802686245c2c8';
   const main = document.getElementById('main');
   const form =  document.getElementById('form');
   const search = document.getElementById('search');
+  
 
   //display movie in the place holder
   form.addEventListener("submit",(e)=>{
@@ -98,12 +99,11 @@ const apiKey = 'api_key=1cf50e6248dc270629e802686245c2c8';
     const searchMovie=search.value;
 
     if(searchMovie){
-        getMovies(searchURL+'&query='+searchMovie);
+        getMovies(`${searchURL}&query=${searchTitle}`);
       } else {
         getMovies(apiURL);
       }
     });
-
   //get data from API for movies on landing page
   function getMovies(url) {
     fetch(url)
@@ -138,6 +138,7 @@ const apiKey = 'api_key=1cf50e6248dc270629e802686245c2c8';
       main.appendChild(movieElement);
     });
   }
+  
   fetch(`http://localhost:3000/posts`, options)
           .then(response => { return response.json() })
           .then(data => {

@@ -106,7 +106,7 @@ const apiKey = 'api_key=1cf50e6248dc270629e802686245c2c8';
   
   getMovies(apiURL);
 
-  //display movies on 
+  //display movies on the landing page
   function showMovies(data) {
     main.innerHTML = "";
   

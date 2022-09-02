@@ -33,6 +33,11 @@ input[type=text]{
     border: none;
     border-radius: 15px;
     outline: 0;
+    color: #000;
+}
+.search:focus{
+    /* background-color: gray; */
+    color: white;
 }
 main{
     display: flex;

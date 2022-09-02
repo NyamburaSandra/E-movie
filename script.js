@@ -98,10 +98,32 @@ const apiKey = 'api_key=1cf50e6248dc270629e802686245c2c8';
     fetch(url)
       .then((response) => response.json())
       .then((data) => {
-        //console.log(data.results)
+        
         showMovies(data.results);
       })
       .catch(err => alert.warn(err.message))
   }
   
   getMovies(apiURL);
+
+  //display movies on 
+  function showMovies(data) {
+    main.innerHTML = "";
+  
+    data.forEach((movie) => {
+      const { title, poster_path, overview } = movie;
+      const movieElement = document.createElement("div");
+      movieElement.classList.add("movie");
+      movieElement.innerHTML = `
+      <img class = "img"
+        src="${IMG_URL + poster_path}" alt="${title}"/>
+      <div class="movie-info">
+        <h3>${title}</h3>
+      </div>
+      <div class="overview">
+        ${overview}
+      </div>
+  `;
+      main.appendChild(movieElement);
+    });
+  }

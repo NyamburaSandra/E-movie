@@ -34,3 +34,50 @@ input[type=text]{
     border-radius: 15px;
     outline: 0;
 }
+main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .movie{
+    width: 300px;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0,1);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .movie img{
+    width: 100%;
+    /* filter: gray;
+    -webkit-filter: grayscale(1); */
+  }
+  
+  .movie img:hover{
+     filter: gray;
+    -webkit-filter: grayscale(1);
+  
+  }
+  
+  .movie-info{
+     color: #0A81AB;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+    background-color: #000;
+  
+  }
+  
+  .movie-info h3{
+    margin-top: 0;
+  }
+  
+  .movie-info span{
+    background-color: #0A81AB;
+    padding: 0.25rem 0.5rem;
+    border-radius: 3px;
+  }

@@ -92,3 +92,16 @@ const apiKey = 'api_key=1cf50e6248dc270629e802686245c2c8';
   const form =  document.getElementById('form');
   const search = document.getElementById('search');
   const tags = document.getElementById('tags');
+
+  //get data from API for movies on landing page
+  function getMovies(url) {
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        //console.log(data.results)
+        showMovies(data.results);
+      })
+      .catch(err => alert.warn(err.message))
+  }
+  
+  getMovies(apiURL);

@@ -127,3 +127,11 @@ const apiKey = 'api_key=1cf50e6248dc270629e802686245c2c8';
       main.appendChild(movieElement);
     });
   }
+  fetch(`http://localhost:3000/posts`, options)
+          .then(response => { return response.json() })
+          .then(data => {
+              console.log(data)
+          });
+    
+    
+    

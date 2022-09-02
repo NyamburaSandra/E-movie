@@ -13,11 +13,13 @@ body{
     background-color: cornflowerblue;
     overflow: hidden;
 }
-/* nav bar */
+.search-container{
+    float: right; 
+}
 .container a{
     float: left;
     padding: 20px 16px;
-    text-align: center;
+    text-align: le;
     display: block;
     color: white;
     text-transform: uppercase;
@@ -25,17 +27,27 @@ body{
     font-size: 15px;
     text-decoration: none;
 }
-/* search bar */
-.search-container{
-    float: right;
-    
+.search{
+    background-color: lightgray;
+    border: 2px solid white;
+    padding:0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    color:#fff;
+    font-family: inherit;
+}
+.search:focus{
+    background-color: white;
+}
+.search::placeholder{
+    color: black;
 }
 input[type=text]{
     padding: 6px;
     margin-top: 13px;
     border: none;
     border-radius: 15px;
-    outline: 0;
+    outline:0;
 }
 main{
     display: flex;

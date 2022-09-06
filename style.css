@@ -35,7 +35,7 @@ body{
     padding: 0.5rem 1rem;
     border-radius: 50px;
     font-size: 1rem;
-    color: #F9DFDC;
+    color: black;
     font-family: inherit;
   }
   .search:focus{
@@ -71,13 +71,13 @@ body{
     -webkit-filter: grayscale(1);
   }
   .movie-info{
-     color: #0A81AB;
+     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0.5rem 1rem 1rem;
     letter-spacing: 0.5px;
-    background-color: #000;
+    background-color: cornflowerblue;
   }
   .movie-info h3{
     margin-top: 0;
